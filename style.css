@@ -206,11 +206,28 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:1140px;
 }
 .logo-text-style{
-	font-weight:500;
-	font-size:18px;
+	font-weight:700;
 	color:#FEFFFF!important;
 	line-height:20px;
 	font-family:"Poppins";
+	font-size:20px;
+	letter-spacing:1px;
+}
+.navigation-container{
+	font-family:"Poppins";
+	font-weight:400;
+	font-size:14px;
+	color:#FFFFFF!important;
+	text-transform:none;
+	text-decoration:none;
+	letter-spacing:2px;
+}
+.navigation-container:active{
+	letter-spacing:2px;
+	font-family:"Poppins";
+	font-weight:400;
+	font-size:14px;
+	color:#FEFFFE!important;
 }
 
 /* = Colour
@@ -220,6 +237,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bgc-black{
 	background-color:#000000;
+}
+
+/* Link colour styles */
+
+.ltc-white{
+	color:#FFFFFF!important;
+}
+.ltc-white:hover{
+	color:#cccccc!important;
 }
 
 
