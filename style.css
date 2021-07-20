@@ -47,57 +47,38 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Sizes */
 
+.bloc-lg{
+	padding:100px 20px;
+}
 .bloc-sm{
 	padding:20px;
 }
 
 
-/* Dark theme */
+/* Light theme */
 
-.d-bloc{
-	color:rgba(255,255,255,.7);
-}
-.d-bloc button:hover{
-	color:rgba(255,255,255,.9);
-}
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
-	border-color:rgba(255,255,255,.9);
-}
-.d-bloc .divider-h span{
-	border-color:rgba(255,255,255,.2);
-}
-.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
-	color:rgba(255,255,255,.6);
-}
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
-	color:rgba(255,255,255,1);
-}
-.d-bloc .navbar-toggle .icon-bar{
-	background:rgba(255,255,255,1);
-}
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
-	color:rgba(255,255,255,1);
-	border-color:rgba(255,255,255,1);
-}
-.d-bloc .card{
+.d-bloc .card,.l-bloc{
 	color:rgba(0,0,0,.5);
 }
-.d-bloc .card button:hover{
+.d-bloc .card button:hover,.l-bloc button:hover{
 	color:rgba(0,0,0,.7);
 }
-.d-bloc .card icon{
+.l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
 	border-color:rgba(0,0,0,.7);
 }
-.d-bloc .card .divider-h span{
+.d-bloc .card .divider-h span,.l-bloc .divider-h span{
 	border-color:rgba(0,0,0,.1);
 }
-.d-bloc .card .a-btn{
+.d-bloc .card .a-btn,.l-bloc .a-btn,.l-bloc .navbar a,.l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-lg, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a{
 	color:rgba(0,0,0,.6);
 }
-.d-bloc .card .a-btn:hover{
+.d-bloc .card .a-btn:hover,.l-bloc .a-btn:hover,.l-bloc .navbar a:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-lg, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover{
 	color:rgba(0,0,0,1);
 }
-.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
+.l-bloc .navbar-toggle .icon-bar{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .card .btn-wire,.d-bloc .card .btn-wire:hover,.l-bloc .btn-wire,.l-bloc .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
@@ -134,6 +115,13 @@ a:hover{text-decoration: none; cursor:pointer;}
 	right:100%;
 	left:auto}
 }
+/* = Bric adjustment margins
+-------------------------------------------------------------- */
+
+.mg-md{
+	margin-top:10px;
+	margin-bottom:20px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -148,10 +136,21 @@ button{
 	outline: none!important;
 }
 
+.btn-sq{
+	border-radius: 0px;
+}
 
 
 
 
+/* = Lists
+-------------------------------------------------------------- */
+.list-sp-md li{
+	padding-bottom:10px;
+}
+.list-sp-md li:last-child,.list-sp-lg li:last-child,.list-sp-xl li:last-child{
+	padding-bottom:0;
+}
 
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
@@ -200,7 +199,7 @@ button{
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-	font-family:"Helvetica";
+	font-family:"Poppins";
 }
 .container{
 	max-width:1140px;
@@ -228,6 +227,59 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-weight:400;
 	font-size:14px;
 	color:#FEFFFE!important;
+}
+.global-background{
+	background-color:#000000;
+	background-size:length;
+}
+.footer-item-title{
+	font-family:"Poppins";
+	font-weight:400;
+	line-height:150%;
+	color:#C3C3C3!important;
+	font-size:24px;
+}
+.btn-style{
+	font-size:17px;
+	font-family:"Poppins";
+	font-weight:normal;
+	padding:0px 0px 0px 0px;
+	border-radius:0px 0px 0px 0px;
+}
+.menu-hamburger-style{
+	color:#FFFFFF!important;
+	background-color:#FEFFFF;
+}
+.text-copy-rights-style{
+	text-align:center;
+	font-family:"Poppins";
+	font-weight:400;
+	font-size:14px;
+	color:#C3C3C3!important;
+}
+.heading-01-contact-heading{
+	color:#FEFFFE!important;
+	font-family:"Poppins";
+	font-weight:700;
+	margin:0px 0px 0px 0px;
+}
+.btn-style:hover{
+	color:rgba(255,255,255,0.50)!important;
+}
+.navigation-item-active{
+	color:#FEFFFE!important;
+	font-family:"Poppins";
+	font-weight:bold;
+	letter-spacing:2px;
+}
+.navigation-item-inactive{
+	color:#C3C3C3!important;
+	font-family:"Poppins";
+	font-weight:normal;
+	letter-spacing:2px;
+}
+.row-style{
+	width:100%;
 }
 
 /* = Colour
