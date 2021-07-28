@@ -55,38 +55,79 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
-/* Light theme */
+/* Dark theme */
 
-.d-bloc .card,.l-bloc{
+.d-bloc{
+	color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+	border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
+}
+.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+	color:rgba(255,255,255,.6);
+}
+.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+.d-bloc .card{
 	color:rgba(0,0,0,.5);
 }
-.d-bloc .card button:hover,.l-bloc button:hover{
+.d-bloc .card button:hover{
 	color:rgba(0,0,0,.7);
 }
-.l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
+.d-bloc .card icon{
 	border-color:rgba(0,0,0,.7);
 }
-.d-bloc .card .divider-h span,.l-bloc .divider-h span{
+.d-bloc .card .divider-h span{
 	border-color:rgba(0,0,0,.1);
 }
-.d-bloc .card .a-btn,.l-bloc .a-btn,.l-bloc .navbar a,.l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-lg, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a{
+.d-bloc .card .a-btn{
 	color:rgba(0,0,0,.6);
 }
-.d-bloc .card .a-btn:hover,.l-bloc .a-btn:hover,.l-bloc .navbar a:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-lg, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover{
+.d-bloc .card .a-btn:hover{
 	color:rgba(0,0,0,1);
 }
-.l-bloc .navbar-toggle .icon-bar{
-	color:rgba(0,0,0,.6);
-}
-.d-bloc .card .btn-wire,.d-bloc .card .btn-wire:hover,.l-bloc .btn-wire,.l-bloc .btn-wire:hover{
+.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
+}
+
+/* Row Margin Offsets */
+
+.voffset-md{
+	margin-top:50px;
+}
+.voffset-lg{
+	margin-top:80px;
 }
 
 
 /* = NavBar
 -------------------------------------------------------------- */
 
+/* = Sticky Nav
+-------------------------------------------------------------- */
+
+.sticky-nav.sticky{
+	position:fixed;
+	top:0;
+	z-index:1000;
+	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	 transition: all .2s ease-out;
+}
 /* Handle Multi Level Navigation */
 .dropdown-menu .dropdown-menu{
 	border:none}
@@ -261,6 +302,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:#FEFFFE!important;
 	font-family:"Poppins";
 	font-weight:700;
+	text-decoration:none;
+	font-size:48px;
+	text-transform:none;
 	margin:0px 0px 0px 0px;
 }
 .btn-style:hover{
@@ -277,9 +321,29 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Poppins";
 	font-weight:normal;
 	letter-spacing:2px;
+	text-transform:none;
+	padding:0px 0px 0px 0px;
 }
 .row-style{
 	width:100%;
+}
+.container-without-top-padding{
+	padding:0px 0px 0px 0px;
+}
+.margin-10-left{
+	margin-left:10px;
+}
+.link-style-1{
+	text-decoration:underline!important;
+	font-family:"Poppins";
+	font-weight:500;
+	font-size:20px;
+}
+.p-style{
+	width:100%;
+}
+.h1-style{
+	font-size:48px;
 }
 
 /* = Colour
@@ -289,6 +353,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bgc-black{
 	background-color:#000000;
+}
+
+/* Text colour styles */
+
+.tc-silver{
+	color:#C3C3C3!important;
 }
 
 /* Link colour styles */
@@ -381,3 +451,36 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	   height: 320px;
     }
 }
+
+@media (max-width: 991px){
+	.h1-bloc-footer-style{
+		font-size:36px;
+	}
+	
+	/* MD Row Margin Offsets */
+	.voffset-md{
+		margin-top:30px;
+	}
+	
+}
+
+@media (max-width: 767px){
+	.h1-5-style{
+		font-size:36px;
+	}
+	
+}
+
+@media (max-width: 575px){
+	.h1-style{
+		font-size:40px;
+	}
+	.h1-bloc-footer-style{
+		font-size:24px;
+	}
+	.h1-5-style{
+		font-size:18px;
+	}
+	
+}
+
