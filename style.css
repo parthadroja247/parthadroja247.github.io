@@ -107,6 +107,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Row Margin Offsets */
 
+.voffset{
+	margin-top:30px;
+}
 .voffset-md{
 	margin-top:50px;
 }
@@ -159,6 +162,13 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -345,6 +355,16 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h1-style{
 	font-size:48px;
 }
+.ddd-style-down{
+	line-height:300%;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	font-family:"Poppins";
+	font-size:40px;
+	background-color:#191C1E;
+	text-decoration:none;
+	border-style:_popUpItemAction:;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -467,6 +487,16 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 @media (max-width: 767px){
 	.h1-5-style{
 		font-size:36px;
+	}
+	.h3-style{
+		font-size:20px;
+	}
+	.h1-page-wrap-style{
+		font-size:24px;
+	}
+	.menu-hamburger-style{
+		color:#FFFFFF!important;
+		border-color:transparent!important;
 	}
 	
 }
